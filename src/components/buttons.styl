@@ -1,0 +1,62 @@
+//Here you can customize the buttons. If you don't touch this file, you will be able to use default Venom buttons
+@import '../variables/colors.styl'
+
+//The button class
+.button
+  display inline-block
+  text-align center
+  vertical-align middle
+  line-height 1
+  padding 0.75em 0.90em
+  margin 0em 0.45em
+  border 1px solid transparent
+  border-radius 2px
+  color #fafafa
+  background $default = $primary
+  cursor pointer
+  transition background 0.25s ease-in
+
+
+  &.primary
+    background $primary
+    border-color $border_primary
+    &:hover
+      background $dark_primary
+
+  &.warning
+    background $warning
+    border-color $border_warning
+    &:hover
+      background $dark_warning
+
+  &.danger
+    background $danger
+    border-color $border_danger
+    &:hover
+      background $dark_danger
+
+  &.success
+    background $success
+    border-color $border_success
+    &:hover
+      background $dark_success
+
+  &.info
+    background $info
+    border-color $border_info
+    &:hover
+      background $dark_info
+
+  //Sizes
+  &.small
+    font-size 0.8em
+    padding 0.55em 0.70em
+
+  &.big
+    font-size 1.5em
+    padding 0.75em 1.5em
+
+  &.full
+    display block
+    width 96%
+    margin 0 auto
