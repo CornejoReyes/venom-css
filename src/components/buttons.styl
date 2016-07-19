@@ -7,43 +7,52 @@
   text-align center
   vertical-align middle
   line-height 1
-  padding 0.75em 0.90em
+  padding 0.6em 0.8em
   margin 0em 0.45em
-  border 1px solid transparent
-  border-radius 2px
-  color #fafafa
-  background $default = $primary
+  border 1px solid $border_default
+  border-radius 1px
+  color #212121
+  background $default
   cursor pointer
   transition background 0.25s ease-in
+
+  &:hover
+    background $dark_default
+    border-color $border_default
 
 
   &.primary
     background $primary
     border-color $border_primary
+    color #fafafa
     &:hover
       background $dark_primary
 
   &.warning
     background $warning
     border-color $border_warning
+    color #fafafa
     &:hover
       background $dark_warning
 
   &.danger
     background $danger
     border-color $border_danger
+    color #fafafa
     &:hover
       background $dark_danger
 
   &.success
     background $success
     border-color $border_success
+    color #fafafa
     &:hover
       background $dark_success
 
   &.info
     background $info
     border-color $border_info
+    color #fafafa
     &:hover
       background $dark_info
 
@@ -58,5 +67,22 @@
 
   &.full
     display block
-    width 96%
-    margin 0 auto
+    width 100%
+    margin 0
+
+  //Groups, in this section, you can set the configuration for your button groups
+.button-group
+  .button
+    border-radius 0px
+    margin 0px
+    float left
+    border-right transparent
+
+    &:first-child
+      border-radius 2px 0px 0px 2px
+      margin 0px
+
+    &:last-child
+      border 1px solid inherit
+      border-radius 0px 2px 2px 0px
+      margin 0px
