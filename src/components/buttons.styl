@@ -11,10 +11,16 @@
   margin 0em 0.45em
   border 1px solid $border_default
   border-radius 1px
-  color #212121
+  color $font_color
   background $default
   cursor pointer
   transition background 0.25s ease-in
+
+  &.disabled
+    opacity 0.5
+    cursor not-allowed
+    &:hover
+      background $default
 
   &:hover
     background $dark_default
@@ -25,6 +31,11 @@
     background $primary
     border-color $border_primary
     color #fafafa
+    &.disabled
+      opacity 0.5
+      cursor not-allowed
+      &:hover
+        background $primary
     &:hover
       background $dark_primary
 
@@ -32,6 +43,11 @@
     background $warning
     border-color $border_warning
     color #fafafa
+    &.disabled
+      opacity 0.5
+      cursor not-allowed
+      &:hover
+        background $warning
     &:hover
       background $dark_warning
 
@@ -39,6 +55,11 @@
     background $danger
     border-color $border_danger
     color #fafafa
+    &.disabled
+      opacity 0.5
+      cursor not-allowed
+      &:hover
+        background $danger
     &:hover
       background $dark_danger
 
@@ -46,6 +67,11 @@
     background $success
     border-color $border_success
     color #fafafa
+    &.disabled
+      opacity 0.5
+      cursor not-allowed
+      &:hover
+        background $success
     &:hover
       background $dark_success
 
@@ -53,36 +79,45 @@
     background $info
     border-color $border_info
     color #fafafa
+    &.disabled
+      opacity 0.5
+      cursor not-allowed
+      &:hover
+        background $info
     &:hover
       background $dark_info
 
   //Sizes
   &.small
     font-size 0.8em
-    padding 0.55em 0.70em
 
   &.big
     font-size 1.5em
-    padding 0.75em 1.5em
 
   &.full
     display block
     width 100%
     margin 0
 
+  &.rounded
+    border-radius 2em
+
   //Groups, in this section, you can set the configuration for your button groups
 .button-group
+  width 100%
+  height auto
+  display block
+  overflow auto
   .button
     border-radius 0px
-    margin 0px
+    margin 0.5em 0em
     float left
     border-right transparent
+    position relative
 
     &:first-child
       border-radius 2px 0px 0px 2px
-      margin 0px
 
     &:last-child
       border 1px solid inherit
       border-radius 0px 2px 2px 0px
-      margin 0px
