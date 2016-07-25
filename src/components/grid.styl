@@ -1,0 +1,20 @@
+//Here you can configure the grid as you wish, setting the number of columns, breakpoints, etc.
+
+@import '../variables/grid.styl'
+@import '../mixins/grid.styl'
+
+.container
+  width 90%
+  max-width $max-width
+  margin 0 auto
+  height auto
+  &.max
+    width 100%
+
+.row
+  width 100%
+  padding 0 $padding-of-columns
+  grid-sistem($number-of-columns,$padding-of-columns)
+
+
+//Media Queries
