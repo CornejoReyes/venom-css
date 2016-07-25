@@ -12,9 +12,13 @@
     width 100%
 
 .row
-  width 100%
   padding 0 $padding-of-columns
-  grid-sistem($number-of-columns,$padding-of-columns)
+  &:after
+    clear both
+    content ""
+    display block
+
+grid-sistem($number-of-columns,$padding-of-columns)
 
 
 //Media Queries
