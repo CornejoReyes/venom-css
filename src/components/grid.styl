@@ -18,7 +18,13 @@
     content ""
     display block
 
-grid-sistem($number-of-columns,$padding-of-columns)
-
-
+grid-sistem-mob($number-of-columns,$padding-of-columns)
 //Media Queries
+@media (min-width 768px)
+  grid-sistem-sml($number-of-columns,$padding-of-columns)
+
+@media (min-width 991px)
+  grid-sistem-med($number-of-columns,$padding-of-columns)
+
+@media (min-width 1170px)
+  grid-sistem-lrg($number-of-columns,$padding-of-columns)
