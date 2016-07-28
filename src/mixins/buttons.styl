@@ -1,1 +1,12 @@
 //Here're the mixins for buttons
+
+disabled(color)
+  &.disabled
+    opacity 0.5
+    cursor not-allowed
+    &:hover
+      background color
+
+hover(bg)
+  &:hover
+    background bg

@@ -13,20 +13,28 @@ width-cell(number-of-columns, padding-of-columns)
       float left
       position relative
 
+offset(number-of-columns)
+  for cols in (number-of-columns - 1)..1
+    &-offset-{cols}
+        margin-left ((cols/100%)*(100%/number-of-columns)) * 100
 
 
 grid-sistem-mob(number-of-columns, padding-of-columns)
   .mob
     width-cell(number-of-columns, padding-of-columns)
+    offset(number-of-columns)
 
 grid-sistem-sml(number-of-columns, padding-of-columns)
   .sml
     width-cell(number-of-columns, padding-of-columns)
+    offset(number-of-columns)
 
 grid-sistem-med(number-of-columns, padding-of-columns)
   .med
     width-cell(number-of-columns, padding-of-columns)
+    offset(number-of-columns)
 
 grid-sistem-lrg(number-of-columns, padding-of-columns)
   .lrg
     width-cell(number-of-columns, padding-of-columns)
+    offset(number-of-columns)

@@ -1,5 +1,6 @@
 //Here you can customize the buttons. If you don't touch this file, you will be able to use white Venom buttons
 @import '../variables/colors.styl'
+@import '../mixins/buttons.styl'
 
 //The button class
 .button
@@ -15,136 +16,79 @@
   cursor pointer
   transition background 0.25s ease-in
 
-  &.disabled
-    opacity 0.5
-    cursor not-allowed
-    &:hover
-      background $white
+  disabled($white)
 
-  &:hover
-    background $dark_white
-    border-color $border_white
-
+  hover($dark_white)
 
   &.blue
     background $blue
     border-color $border_blue
     color #fafafa
-    &.disabled
-      opacity 0.5
-      cursor not-allowed
-      &:hover
-        background $blue
-    &:hover
-      background $dark_blue
+    disabled($blue)
+    hover($dark_blue)
 
   &.yellow
     background $yellow
     border-color $border_yellow
     color #fafafa
-    &.disabled
-      opacity 0.5
-      cursor not-allowed
-      &:hover
-        background $yellow
-    &:hover
-      background $dark_yellow
+    disabled($yellow)
+    hover($dark_yellow)
 
   &.red
     background $red
     border-color $border_red
     color #fafafa
-    &.disabled
-      opacity 0.5
-      cursor not-allowed
-      &:hover
-        background $red
-    &:hover
-      background $dark_red
+    disabled(red$red)
+    hover($dark_red)
 
   &.green
     background $green
     border-color $border_green
     color #fafafa
-    &.disabled
-      opacity 0.5
-      cursor not-allowed
-      &:hover
-        background $green
-    &:hover
-      background $dark_green
+    disabled($green)
+    hover($dark_green)
 
   &.babyblue
     background $babyblue
     border-color $border_babyblue
     color #fafafa
-    &.disabled
-      opacity 0.5
-      cursor not-allowed
-      &:hover
-        background $babyblue
-    &:hover
-      background $dark_babyblue
+    disabled($babyblue)
+    hover($dark_babyblue)
 
   &.orange
     background $orange
     border-color $border_orange
     color #fafafa
-    &.disabled
-      opacity 0.5
-      cursor not-allowed
-      &:hover
-        background $orange
-    &:hover
-      background $dark_orange
+    disabled($orange)
+    hover($dark_orange)
 
   &.brown
     background $brown
     border-color $border_brown
     color #fafafa
-    &.disabled
-      opacity 0.5
-      cursor not-allowed
-      &:hover
-        background $brown
-    &:hover
-      background $dark_brown
+    disabled($brown)
+    hover($dark_brown)
 
   &.purple
     background $purple
     border-color $border_purple
     color #fafafa
-    &.disabled
-      opacity 0.5
-      cursor not-allowed
-      &:hover
-        background $purple
-    &:hover
-      background $dark_purple
+    disabled($purple)
+    hover($dark_purple)
 
   &.pink
     background $pink
     border-color $border_pink
     color #fafafa
-    &.disabled
-      opacity 0.5
-      cursor not-allowed
-      &:hover
-        background $pink
-    &:hover
-      background $dark_pink
+    disabled($pink)
+    hover($dark_pink)
 
   &.gray
     background $gray
     border-color $border_gray
     color #fafafa
-    &.disabled
-      opacity 0.5
-      cursor not-allowed
-      &:hover
-        background $gray
-    &:hover
-      background $dark_gray
+    disabled($gray)
+    hover($dark_gray)
 
   //Sizes
   &.small
