@@ -12,83 +12,55 @@
   border 1px solid $border_white
   border-radius 1px
   color $font_color
-  background $white
+  background $default
   cursor pointer
   transition background 0.25s ease-in
 
-  disabled($white)
+  disabled($default)
 
-  hover($dark_white)
+  hover($dark_default)
 
-  &.blue
-    background $blue
-    border-color $border_blue
+  &.primary
+    background $primary
+    border-color $border_primary
     color #fafafa
-    disabled($blue)
-    hover($dark_blue)
+    disabled($primary)
+    hover($dark_primary)
 
-  &.yellow
-    background $yellow
-    border-color $border_yellow
+  &.warning
+    background $warning
+    border-color $border_warning
     color #fafafa
-    disabled($yellow)
-    hover($dark_yellow)
+    disabled($warning)
+    hover($dark_warning)
 
-  &.red
-    background $red
-    border-color $border_red
+  &.danger
+    background $danger
+    border-color $border_danger
     color #fafafa
-    disabled(red$red)
-    hover($dark_red)
+    disabled($danger)
+    hover($dark_danger)
 
-  &.green
-    background $green
-    border-color $border_green
+  &.success
+    background $success
+    border-color $border_success
     color #fafafa
-    disabled($green)
-    hover($dark_green)
+    disabled($success)
+    hover($dark_success)
 
-  &.babyblue
-    background $babyblue
-    border-color $border_babyblue
+  &.info
+    background $info
+    border-color $border_info
     color #fafafa
-    disabled($babyblue)
-    hover($dark_babyblue)
+    disabled($info)
+    hover($dark_info)
 
-  &.orange
-    background $orange
-    border-color $border_orange
+  &.secondary
+    background $secondary
+    border-color $border_secondary
     color #fafafa
-    disabled($orange)
-    hover($dark_orange)
-
-  &.brown
-    background $brown
-    border-color $border_brown
-    color #fafafa
-    disabled($brown)
-    hover($dark_brown)
-
-  &.purple
-    background $purple
-    border-color $border_purple
-    color #fafafa
-    disabled($purple)
-    hover($dark_purple)
-
-  &.pink
-    background $pink
-    border-color $border_pink
-    color #fafafa
-    disabled($pink)
-    hover($dark_pink)
-
-  &.gray
-    background $gray
-    border-color $border_gray
-    color #fafafa
-    disabled($gray)
-    hover($dark_gray)
+    disabled($secondary)
+    hover($dark_secondary)
 
   //Sizes
   &.small
@@ -122,5 +94,5 @@
       border-radius 2px 0px 0px 2px
 
     &:last-child
-      border 1px solid transparent
+      border-right 1px solid transparent
       border-radius 0px 2px 2px 0px

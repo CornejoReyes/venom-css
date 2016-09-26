@@ -1,9 +1,14 @@
 //Some base styles from each tag.
 //Please only change here if you want to apply this on every page from your site
+@import '../variables/typography.styl'
 @import '../variables/colors.styl'
 @import '../mixins/grid.styl'
 
 *
-  font-family Helvetica
+  //you can find $global_font in variables/typography.styl
+  font-family $global_font
   color $font_color
   box-sizing()
+
+body
+    background-color: $background_color

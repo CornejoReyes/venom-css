@@ -2,4 +2,29 @@
 //Go to variables/typography.styl and set the names you want to use for your fonts, sizes and more.
 
 @import 'variables/typography.styl'
+@import 'mixins/typography.styl'
 
+h1
+h2
+h3
+h4
+h5
+h6
+  font-weight $heading_weight
+  padding $heading_padding
+  em
+    font-weight normal
+    color $em_text_color
+    font-size $em_font_size
+h1
+  font-size $h1
+h2
+  font-size $h2
+h3
+  font-size $h3
+h4
+  font-size $h4
+h5
+  font-size $h5
+h6
+  font-size $h6
