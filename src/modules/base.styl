@@ -2,13 +2,15 @@
 //Please only change here if you want to apply this on every page from your site
 @import '../variables/typography.styl'
 @import '../variables/colors.styl'
+@import '../variables/base.styl'
 @import '../mixins/grid.styl'
 
 *
-  //you can find $global_font in variables/typography.styl
+  //you can find this variables in variables/typography.styl
   font-family $global_font
   color $font_color
   box-sizing()
+  line-height 1.386
 
 body
     background-color: $background_color

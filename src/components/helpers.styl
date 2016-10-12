@@ -2,6 +2,7 @@
 //
 //
 @import "../variables/colors.styl"
+@import "../mixins/forms.styl"
 //Text
 .alg-center
   text-align center
@@ -15,9 +16,47 @@
 .alg-justify
     text-align justify
 
+.underline
+    text-decoration underline
+
+.italic
+    font-style italic
+
+.bold
+    font-weight bold
+
+.line-through
+    text-decoration line-through
+
+.text-primary
+    color $primary
+
+.text-success
+    color $success
+
+.text-info
+    color $info
+
+.text-warning
+    color $warning
+
+.text-danger
+    color $danger
+
+.uppercase
+    text-transform uppercase
+
+.lowercase
+    text-transform lowercase
+
+.capitalize
+    text-transform capitalize
+
+.clearfix
+    celarfix()
 //floats
-.right
+.move-right
     float right
 
-.left
+.move-left
     float left
