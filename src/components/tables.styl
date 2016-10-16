@@ -1,0 +1,38 @@
+//Here's the tables styles
+
+@import "../variables/tables.styl"
+@import "../variables/colors.styl"
+
+table
+    width 100%
+    thead, tbody,tr
+        border-bottom 1px solid $table-normal-border
+        width auto
+        height auto
+        td
+            padding 6px
+    tbody tr
+        &.success
+            background $success +70% !important
+        &.info
+            background $info +70% !important
+        &.primary
+            background $primary +70% !important
+        &.warning
+            background $warning +70% !important
+        &.danger
+            background $danger +70% !important
+    thead
+        td
+            font-weight bold
+    &.bordered
+        border 1px solid $table-normal-border
+        td
+            border 1px solid $table-normal-border
+    &.stripped
+        tbody
+            tr:nth-child(even)
+                background #f0f0f0
+    &.interactive
+        tbody tr:hover
+            background $table-backgronud-hover
