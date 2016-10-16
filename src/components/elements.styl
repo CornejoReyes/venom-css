@@ -1,17 +1,11 @@
+
+@import "../mixins/elements.styl"
+
 .keyword
     padding 4px 7px
     color white
     border-radius 2px
-    &.success
-        background $success
-    &.primary
-        background $primary
-    &.danger
-        background $danger
-    &.warning
-        background $warning
-    &.info
-        background $info
+    color-semantic-bg()
 
 span.code
     padding 6px
@@ -19,16 +13,28 @@ span.code
     color #f02822
 
 .bag
-    padding 4px
-    border-radius 2em
+    padding 6px
+    border-radius 6em
     color white
-    &.success
-        background $success
-    &.primary
-        background $primary
-    &.danger
-        background $danger
-    &.warning
-        background $warning
-    &.info
-        background $info
+    font-size 12px
+    color-semantic-bg()
+
+.helpbox
+	border-width 1px
+	border-style solid
+	padding 6px 12px
+	border-left-width 6px
+	border-radius 4px
+	color-semantic-border()
+
+.toolbox
+	border-width 1px
+	border-style solid
+	border-radius 2px
+	toolbox-colors()
+	.title
+		font-weight 500
+		color white
+		padding 6px 12px
+	.body
+		padding 6px 12px
