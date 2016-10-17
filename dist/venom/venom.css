@@ -767,7 +767,6 @@ p {
   color: #5c5c5c;
   background: #fff;
   cursor: pointer;
-  transition: background 0.25s ease-in;
 }
 .button.disabled {
   opacity: 0.5;
@@ -779,9 +778,54 @@ p {
 .button:hover {
   background: #f2f2f2;
 }
+.button.linear {
+  background: #fff !important;
+}
+.button.linear.success {
+  color: #56c158;
+}
+.button.linear.success:hover {
+  color: #3ca33e;
+  border-color: #40af43;
+}
+.button.linear.primary {
+  color: #1a7cd6;
+}
+.button.linear.primary:hover {
+  color: #1563ab;
+  border-color: #166ab7;
+}
+.button.linear.info {
+  color: #36c1eb;
+}
+.button.linear.info:hover {
+  color: #15a6d2;
+  border-color: #17b2e0;
+}
+.button.linear.warning {
+  color: #feb046;
+}
+.button.linear.warning:hover {
+  color: #fe9406;
+  border-color: #fe9c17;
+}
+.button.linear.danger {
+  color: #eb544f;
+}
+.button.linear.danger:hover {
+  color: #e2201a;
+  border-color: #e72d26;
+}
+.button.linear.secondary {
+  color: #9c9c9c;
+}
+.button.linear.secondary:hover {
+  color: #8c8c8c;
+  border-color: #858585;
+}
 .button.primary {
   background: #1a7cd6;
-  border-color: #1976cb;
+  border-color: #1770c1;
   color: #fafafa;
 }
 .button.primary.disabled {
@@ -796,7 +840,7 @@ p {
 }
 .button.warning {
   background: #feb046;
-  border-color: #fea936;
+  border-color: #fea226;
   color: #fafafa;
 }
 .button.warning.disabled {
@@ -811,7 +855,7 @@ p {
 }
 .button.danger {
   background: #eb544f;
-  border-color: #e94641;
+  border-color: #e83933;
   color: #fafafa;
 }
 .button.danger.disabled {
@@ -826,7 +870,7 @@ p {
 }
 .button.success {
   background: #56c158;
-  border-color: #4cbd4e;
+  border-color: #43b846;
   color: #fafafa;
 }
 .button.success.disabled {
@@ -841,7 +885,7 @@ p {
 }
 .button.info {
   background: #36c1eb;
-  border-color: #29bdea;
+  border-color: #1cb9e8;
   color: #fafafa;
 }
 .button.info.disabled {
@@ -856,7 +900,7 @@ p {
 }
 .button.secondary {
   background: #9c9c9c;
-  border-color: #949494;
+  border-color: #8c8c8c;
   color: #fafafa;
 }
 .button.secondary.disabled {
@@ -1023,7 +1067,7 @@ table.interactive tbody tr:hover {
   background: #36c1eb;
 }
 span.code {
-  padding: 6px;
+  padding: 2px 6px;
   background-color: #ddd;
   color: #f02822;
 }
