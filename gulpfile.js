@@ -18,6 +18,10 @@ gulp.task('compress', function(){
     .pipe(gulp.dest('dist/venom/'))
     .pipe(browserSync.stream());
 });
+gulp.task('move', function(){
+  gulp.src(['src/library/venom.js'])
+  .pipe(gulp.dest('dist/js'));
+});
 gulp.task('serve', ['compile','compress'], function() {
 
     browserSync.init({
@@ -25,5 +29,6 @@ gulp.task('serve', ['compile','compress'], function() {
     });
 
     gulp.watch("src/**/*.styl", ['compile','compress']);
+    gulp.watch("src/**/*.js", ['move']);
     gulp.watch("index.html").on('change', browserSync.reload);
 });

@@ -555,6 +555,22 @@
 			</div>
 	</section>
 
+	<section class="container">
+		<h4>Sidenav</h4>
+		<br>
+		<a href="#">Basic Sidenav</a>
+
+		<div id="mySidenav"></div>
+		<div id="mySidenav2" class="venomSidenav"></div>
+	</section>
+
+	<script type="text/javascript" src="dist/js/venom.js"></script>
+	<script type="text/javascript">
+		venom.sidenav('mySidenav').open();
+		venom.sidenav('mySidenav2', {openSpeed: 100}).open();
+		venom.sidenav('mySidenav').close();
+	</script>
+
 </body>
 
 </html>
