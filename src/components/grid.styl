@@ -4,27 +4,33 @@
 @import '../mixins/grid.styl'
 
 .container
-  width 90%
+  //width 90%
   max-width $max-width
-  margin 0 auto
+  margin-left auto
+  margin-right auto
+  padding-left $padding-of-columns
+  padding-right $padding-of-columns
   height auto
   &.max
     width 100%
 
 .row
-  padding 0 $padding-of-columns
+  padding 0 $padding-of-row
   &:after
     clear both
     content ""
     display block
 
+//Mobile grid
 grid-sistem-mob($number-of-columns,$padding-of-columns)
-//Media Queries
+//Small devices grid
 @media (min-width 768px)
   grid-sistem-sml($number-of-columns,$padding-of-columns)
 
+//Medium devices grid
 @media (min-width 991px)
   grid-sistem-med($number-of-columns,$padding-of-columns)
 
+//Large devices grid
 @media (min-width 1170px)
   grid-sistem-lrg($number-of-columns,$padding-of-columns)
