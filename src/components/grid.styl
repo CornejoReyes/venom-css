@@ -13,6 +13,13 @@
   height auto
   &.max
     width 100%
+  .row
+      margin 0 $margin-of-row
+      padding 0 $padding-of-row
+      &:after
+        clear both
+        content ""
+        display block
 
 .row
   padding 0 $padding-of-row
@@ -20,6 +27,13 @@
     clear both
     content ""
     display block
+  .row
+      margin 0 ($margin-of-row * 2)
+      padding 0 $padding-of-row
+      &:after
+        clear both
+        content ""
+        display block
 
 //Mobile grid
 grid-sistem-mob($number-of-columns,$padding-of-columns)
