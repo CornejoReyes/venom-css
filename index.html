@@ -3,13 +3,14 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="dist/venom/venom.min.css">
 	<link rel="stylesheet" href="dist/css/main.css">
 	<title>Venom</title>
 </head>
 
 <body>
-	<section class="container">
+	<!--<section class="container">
 		<button class="button primary">primary</button>
 		<button class="button warning">warning</button>
 		<button class="button danger">danger</button>
@@ -62,69 +63,190 @@
 		<button class="button disabled secondary">Disabled</button>
 		<button class="button disabled danger">Disabled</button>
 		<button class="button disabled">Disabled</button>
-	</section>
+	</section>-->
 
 	<section class="container">
-		<div class="row">
-			<div class="med-3 alg-center">Columnas de 3</div>
-			<div class="med-3 alg-center">Columnas de 3</div>
-			<div class="med-3 alg-center">Columnas de 3</div>
-			<div class="med-3 alg-center">Columnas de 3</div>
-			<div class="med-4 alg-center">Columnas de 4</div>
-			<div class="med-4 alg-center">Columnas de 4</div>
-			<div class="med-4 alg-center">Columnas de 4</div>
-			<div class="med-6 alg-center">Columnas de 6</div>
-			<div class="med-6 alg-center">Columnas de 6</div>
+		<h3>Grid System</h3>
+		<br>
+		<br>
+		<h4 id="the-grid">The grid</h4>
+		<p>In venom grid system, the <span class="code">.row</span> represent a table row. This means that many columns can be part of it.</p>
+		<p>The colums has been defined automatically, so you don't need to specify a <span class="code">div</span> as a column, but, you need to specify its size. This reduces the code you have to write.</p>
+		<div class="code">
+&lt;div class="row"&gt;
+	&lt;div class="med-3"&gt;
+	&lt;div class="med-3"&gt;
+	&lt;div class="med-3"&gt;
+	&lt;div class="med-3"&gt;
+	&lt;div class="med-4"&gt;
+	&lt;div class="med-4"&gt;
+	&lt;div class="med-4"&gt;
+	&lt;div class="med-6"&gt;
+	&lt;div class="med-6"&gt;
+	&lt;div class="med-12"&gt;
+&lt;/div&gt;
 		</div>
+		<p>This means the unique column that row has will have the maximum size for a row: 12. A row can have columns from size 1 (smallest) to 12 (biggest).</p>
+		<p>Code above looks like this:</p>
+		<div class="row" style="margin-bottom:10px;">
+			<div class="med-3 example alg-center">.med-3</div>
+			<div class="med-3 example alg-center">.med-3</div>
+			<div class="med-3 example alg-center">.med-3</div>
+			<div class="med-3 example alg-center">.med-3</div>
+			<div class="med-4 example alg-center">.med-4</div>
+			<div class="med-4 example alg-center">.med-4</div>
+			<div class="med-4 example alg-center">.med-4</div>
+			<div class="med-6 example alg-center">.med-6</div>
+			<div class="med-6 example alg-center">.med-6</div>
+			<div class="med-12 example alg-center">.med-12</div>
+		</div>
+		<br><br>
+		<h4 id="grid-sizing">Grid sizing</h4>
+		<p>The columns need to complete the size of a row. Simply sume the size of the columns and try to complete twelve.</p>
+		<p>But, what means "med" exactly? This is the size of the sceen where code is displayed. If you are on a medium size screen, <span class="code">.med-*</span> class helps you to respect the size of the column. If you use a small screen, <span class="code">.med-*</span> class will ocupate 100% of the parent's width, but if you're on a large screen, <span class="code">.med-*</span> will respect the size.</p>
+		<p>This is the responsive design. You can set multiple sizes to a HTML tag and, depends to the screen size it will resize itself.</p>
+		<p>Use <span class="code">.mob-*</span>for extra small devices (moviles), <span class="code">.sml-*</span> for small devices, <span class="code">.med-*</span> for medium devices and <span class="code">.lrg-*</span> for large ones.</p>
 	</section>
 	<section class="container">
-		<div class="row">
-			<div class="med-12 alg-center">12</div>
-			<div class="med-11 alg-center">11</div>
-			<div class="med-1 alg-center">1</div>
-			<div class="med-10 alg-center">10</div>
-			<div class="med-2 alg-center">2</div>
-			<div class="med-9 alg-center">9</div>
-			<div class="med-3 alg-center">3</div>
-			<div class="med-8 alg-center">8</div>
-			<div class="med-4 alg-center">4</div>
-			<div class="med-7 alg-center">7</div>
-			<div class="med-5 alg-center">5</div>
-			<div class="med-6 alg-center">6</div>
-			<div class="med-6 alg-center">6</div>
+		<div class="row" style="margin-bottom:10px;">
+			<div class="med-12 example alg-center">12</div>
+			<div class="med-11 example alg-center">11</div>
+			<div class="med-1 example alg-center">1</div>
+			<div class="med-10 example alg-center">10</div>
+			<div class="med-2 example alg-center">2</div>
+			<div class="med-9 example alg-center">9</div>
+			<div class="med-3 example alg-center">3</div>
+			<div class="med-8 example alg-center">8</div>
+			<div class="med-4 example alg-center">4</div>
+			<div class="med-7 example alg-center">7</div>
+			<div class="med-5 example alg-center">5</div>
+			<div class="med-6 example alg-center">6</div>
+			<div class="med-6 example alg-center">6</div>
 		</div>
-	</section>
-
-	<section class="container">
-		<div class="row">
-			<div class="lrg-12 med-6 sml-3 mob-6 bg-success">Responsive</div>
+		<br>
+		<h4 id="stylus-variables">Stylus variables</h4>
+		<p>All the variables for grid are located at <span class="code">variables/grid.styl</span> in the source folder. If you want to alter the number of max columns per row, only change <span class="code">$number-of-columns</span> and that's it.</p>
+		<br><br>
+		<h4 id="row-overflow">Row overflow</h4>
+		<p>If you overflow the row, columns will start a new row.</p>
+		<div class="code">
+&lt;div class="row"&gt;
+	&lt;div class="med-12"&gt;.med-12&lt;/div&gt;
+	&lt;div class="med-9"&gt;.med-9&lt;/div&gt;
+	&lt;div class="med-4"&gt;.med-4&lt;/div&gt;
+	&lt;div class="med-6"&gt;.med-6&lt;/div&gt;
+	&lt;div class="med-2"&gt;.med-2&lt;/div&gt;
+&lt;/div&gt;
 		</div>
 		<div class="row">
-			<div class="med-6 bg-success">Responsive</div>
+			<div class="med-12 example">.med-12</div>
+			<div class="med-9 example">.med-9</div>
+			<div class="med-4 example">.med-4</div>
+			<div class="med-6 example">.med-6</div>
+			<div class="med-2 example">.med-2</div>
 		</div>
-	</section>
-
-	<section class="container">
+		<br><br>
+		<h4 id="nestable-columns">Nestable columns</h4>
+		<p>Building your website as you wish is very easy with Venom. You can nest columns for obtaining the result you want.</p>
+		<div class="code">
+&lt;div class="row"&gt;
+&lt;div class="med-6"&gt;
+	&lt;div&gt;.med-6&lt;/div&gt;
+	&lt;div class="med-6"&gt;.med-6&lt;/div&gt;
+	&lt;div class="med-6"&gt;.med-6&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="med-6"&gt;.med-6&lt;/div&gt;
+		</div>
+		<p>Looks like this</p>
+		</div>
 		<div class="row">
-			<div class="mob-4">
-				<button class="button full primary">Test</button>
+			<div class="med-6 example">
+				<div>.med-6</div>
+				<div class="med-6 example">.med-6</div>
+				<div class="med-6 example">.med-6</div>
 			</div>
-			<div class="mob-8">
-				<button class="button full warning">Buttons</button>
-			</div>
+			<div class="med-6 example">.med-6</div>
 		</div>
-	</section>
+		<br><br>
 
-	<section class="container">
-		<div class="row">
-			<div class="med-left-6 med-6">
-				Offset!
-			</div>
+		<h3 id="offsets">Offsets</h3>
+		<br><br>
+		<p>You can also set empty colums to left or right. This can be set with <span class="code">.<span class="italic" style="color:inherit;">size</span>-left-*</span> or <span class="code">.<span class="italic" style="color:inherit;">size</span>-right-*</span> where size is a column size (mob, sml, med, lrg).</p>
+		<br>
+		<p class="bold">Example to left</p>
+		<div class="code">
+&lt;div class="row"&gt;
+	&lt;div class="med-left-6 med-6"&gt;.med-6 with .med-left-6&lt;/div&gt;
+&lt;/div&gt;
 		</div>
-	</section>
+		<p>Looks like this</p>
+		<div class="row example" style="padding:5px;">
+			<div class="med-left-6 med-6 example">.med-6 with .med-left-6</div>
+		</div>
+		<br>
+		<p class="bold">Example to right</p>
+		<div class="code">
+&lt;div class="row"&gt;
+	&lt;div class="med-right-4 med-4"&gt;.med-4 with .med-right-4&lt;/div&gt;
+	&lt;div class="med-4"&gt;.med-4&lt;/div&gt;
+&lt;/div&gt;
+		</div>
+		<p>Looks like this</p>
+		<div class="row example" style="padding:5px;">
+			<div class="med-right-4 med-4 example">.med-4 with .med-right-4</div>
+			<div class="med-4 example">.med-4</div>
+		</div>
 
+	</section>
 	<section class="container">
-		<form class="form">
+		<h3 id="forms">Forms</h3>
+		<br>
+		<h5 id="form-basic">Form basics</h5>
+		<p>Most of the websites nowdays use forms, for sign-up or sign-in, make surveys and so on. Venom lets you to create pretty forms very easily.</p>
+		<p>First of all use the <span class="code">&lt;form&gt;</span> tag to create a form. Add <span class="code">.form</span> class and then add the <span class="code">&lt;input&gt;</span> and <span class="code">&lt;label&gt;</span> tags to build it.</p>
+		<p>Labels are the name of the input, so you can grup the label and input with <span class="code">.group</span> class.</p>
+		<p>Add <span class="code">.label</span> class to a <span class="code">&lt;label&gt;</span> tag for properly apply styles. Use class <span class="code">.field</span> on <span class="code">&lt;input&gt;</span></p>
+		<div class="code">
+&lt;form class="form"&gt;
+&lt;div class="group"&gt;
+	&lt;label class="med-4 label"&gt;Name&lt;/label&gt;
+	&lt;div class="med-8"&gt;
+		&lt;input type="text" class="field"&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="group"&gt;
+	&lt;label class="med-4 label"&gt;Last Name&lt;/label&gt;
+	&lt;div class="med-8"&gt;
+		&lt;input type="text" class="field"&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="group"&gt;
+	&lt;label class="med-4 label"&gt;E - Mail&lt;/label&gt;
+	&lt;div class="med-8"&gt;
+		&lt;input type="email" class="field"&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="group"&gt;
+	&lt;label class="med-4 label"&gt;Password&lt;/label&gt;
+	&lt;div class="med-8"&gt;
+		&lt;input type="password" class="field"&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="group"&gt;
+	&lt;label class="med-4 label"&gt;Text Area&lt;/label&gt;
+	&lt;div class="med-8"&gt;
+		&lt;textarea name="" id="" cols="30" rows="10" class="field"&gt;&lt;/textarea&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="group"&gt;
+	&lt;div class="med-left-4 med-3"&gt;
+		&lt;button class="button primary full"&gt;Submit&lt;/button&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;/form&gt;
+		</div>
+		<div class="example-nb">
+			<form class="form">
 			<div class="group">
 				<label for="" class="med-4 label">Name</label>
 				<div class="med-8">
@@ -161,46 +283,89 @@
 				</div>
 			</div>
 		</form>
-	</section>
-
-	<section class="container">
-		<form class="form vertical">
-			<div class="group">
-				<label for="" class="med-4 label">Name</label>
-				<div class="med-8">
-					<input type="text" class="field">
+		</div>
+		<br>
+		<h5 id="vertical-form">Vertical form</h5>
+		<p>By default, Venom makes horizontal forms, but you can make a vertical one. Just add <span class="code">.vertical</span> to the element with <span class="code">.form</span> class.</p>
+		<p><span class="code">.form</span> not requires to be in form tag. So you can simulate a form, but it won't work.</p>
+		<div class="code">
+&lt;form class="form vertical"&gt;
+	&lt;div class="group"&gt;
+		&lt;label class="label"&gt;Name&lt;/label&gt;
+		&lt;div class="med-8"&gt;
+			&lt;input type="text" class="field"&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="group"&gt;
+		&lt;label class="label"&gt;Last Name&lt;/label&gt;
+		&lt;div class="med-8"&gt;
+			&lt;input type="text" class="field"&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="group"&gt;
+		&lt;label class="label"&gt;E - Mail&lt;/label&gt;
+		&lt;div class="med-8"&gt;
+			&lt;input type="email" class="field"&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="group"&gt;
+		&lt;label class="label"&gt;Password&lt;/label&gt;
+		&lt;div class="med-8"&gt;
+			&lt;input type="password" class="field"&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="group"&gt;
+		&lt;label class="label"&gt;Text Area&lt;/label&gt;
+		&lt;div class="med-8"&gt;
+			&lt;textarea name="" id="" cols="30" rows="10" class="field"&gt;&lt;/textarea&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="group"&gt;
+		&lt;div class="med-3"&gt;
+			&lt;button class="button primary full"&gt;Submit&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/form&gt;
+		</div>
+		<div class="example-nb">
+			<form class="form vertical">
+				<div class="group">
+					<label class="label">Name</label>
+					<div class="med-8">
+						<input type="text" class="field">
+					</div>
 				</div>
-			</div>
-			<div class="group">
-				<label for="" class="med-4 label">Last Name</label>
-				<div class="med-8">
-					<input type="text" class="field">
+				<div class="group">
+					<label class="label">Last Name</label>
+					<div class="med-8">
+						<input type="text" class="field">
+					</div>
 				</div>
-			</div>
-			<div class="group">
-				<label for="" class="med-4 label">E - Mail</label>
-				<div class="med-8">
-					<input type="email" class="field">
+				<div class="group">
+					<label class="label">E - Mail</label>
+					<div class="med-8">
+						<input type="email" class="field">
+					</div>
 				</div>
-			</div>
-			<div class="group">
-				<label for="" class="med-4 label">Password</label>
-				<div class="med-8">
-					<input type="password" class="field">
+				<div class="group">
+					<label class="label">Password</label>
+					<div class="med-8">
+						<input type="password" class="field">
+					</div>
 				</div>
-			</div>
-			<div class="group">
-				<label for="" class="med-4 label">Text Area</label>
-				<div class="med-8">
-					<textarea name="" id="" cols="30" rows="10" class="field"></textarea>
+				<div class="group">
+					<label class="label">Text Area</label>
+					<div class="med-8">
+						<textarea name="" id="" cols="30" rows="10" class="field"></textarea>
+					</div>
 				</div>
-			</div>
-			<div class="group">
-				<div class="med-3">
-					<button class="button primary full">Submit</button>
+				<div class="group">
+					<div class="med-3">
+						<button class="button primary full">Submit</button>
+					</div>
 				</div>
-			</div>
-		</form>
+			</form>
+		</div>
 	</section>
 
 	<section class="container">

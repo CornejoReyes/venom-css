@@ -2,3 +2,10 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.example{
+	background: #f0f0f0;
+	border: 1px solid #ccc;
+}.example-nb{
+	border: 1px solid #ccc;
+	padding: 12px;
+}
