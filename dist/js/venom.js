@@ -27,11 +27,11 @@ var venomSidenav = (function() {
       return {
         open: function() {
           this.isOpen = true;
-          this.element.classList.add("venomOpenSidenav");
+          this.element.classList.add("sidenav-open");
         },
         close: function() {
           this.isOpen = false;
-          this.element.classList.remove("venomOpenSidenav");
+          this.element.classList.remove("sidenav-open");
         },
         openSpeed: 300,
         isOpen: false
@@ -41,7 +41,7 @@ var venomSidenav = (function() {
     if (elementsConfig[elem] === null) {
       elementsConfig[elem] = sidenav();
       elementsConfig[elem].element = document.getElementById(elem);
-      elementsConfig[elem].element.classList.add("venomSidenav");
+      elementsConfig[elem].element.classList.add("sidenav");
     }
 
     if (typeof config === 'object') {

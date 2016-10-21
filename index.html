@@ -727,19 +727,29 @@
 	</section>
 
 	<section class="container">
-		<h4>Sidenav</h4>
-		<br>
-		<a href="#">Basic Sidenav</a>
+		<div class="row" style="margin-top:10px;">
+			<div class="med-12">
+				<h4>Sidenav</h4>
 
-		<div id="mySidenav"></div>
-		<div id="mySidenav2" class="venomSidenav"></div>
+				<a href="#" onclick="venom.sidenav('mySidenav').open()">Open Sidenav</a>
+				<a href="#" onclick="venom.sidenav('mySidenav').close()">Close Sidenav</a>
+
+				<div id="mySidenav" class="sidenav sidenav-left">
+					<p class="sidenav-item">Item 1</p>
+					<p class="sidenav-item">Item 2</p>
+					<p class="sidenav-item">Item 3</p>
+				</div>
+				<div id="mySidenav2"></div>
+			</div>
+		</div>
+
 	</section>
 
 	<script type="text/javascript" src="dist/js/venom.js"></script>
 	<script type="text/javascript">
-		venom.sidenav('mySidenav').open();
-		venom.sidenav('mySidenav2', {openSpeed: 100}).open();
-		venom.sidenav('mySidenav').close();
+		//venom.sidenav('mySidenav').open();
+		//venom.sidenav('mySidenav2', {openSpeed: 100}).open();
+		//venom.sidenav('mySidenav').close();
 	</script>
 
 </body>
