@@ -728,18 +728,27 @@
 
 	<section class="container">
 		<div class="row" style="margin-top:10px;">
-			<div class="med-12">
-				<h4>Sidenav</h4>
+			<h4>Sidenav</h4>
+			<div class="med-6">
+				<a href="#" class="default-anchor" onclick="venom.sidenav('mySidenav', {openSpeed: 1.5}).open()">Open left Sidenav</a>
+			</div>
 
-				<a href="#" onclick="venom.sidenav('mySidenav').open()">Open Sidenav</a>
-				<a href="#" onclick="venom.sidenav('mySidenav').close()">Close Sidenav</a>
+			<div class="med-6">
+				<a href="#" class="default-anchor" onclick="venom.sidenav('mySidenav2').open()">Open right Sidenav</a>
+			</div>
 
-				<div id="mySidenav" class="sidenav sidenav-left">
-					<p class="sidenav-item">Item 1</p>
-					<p class="sidenav-item">Item 2</p>
-					<p class="sidenav-item">Item 3</p>
-				</div>
-				<div id="mySidenav2"></div>
+			<div id="mySidenav" class="sidenav sidenav-left">
+				<a href="#" class="default-anchor" onclick="venom.sidenav('mySidenav').close()">Close Sidenav</a>
+				<p class="sidenav-item">Item 1</p>
+				<p class="sidenav-item">Item 2</p>
+				<p class="sidenav-item">Item 3</p>
+			</div>
+
+			<div id="mySidenav2" class="sidenav sidenav-right">
+				<a href="#" class="default-anchor" onclick="venom.sidenav('mySidenav2').close()">Close Sidenav</a>
+				<p class="sidenav-item">Item 1</p>
+				<p class="sidenav-item">Item 2</p>
+				<p class="sidenav-item">Item 3</p>
 			</div>
 		</div>
 
@@ -747,9 +756,16 @@
 
 	<script type="text/javascript" src="dist/js/venom.js"></script>
 	<script type="text/javascript">
+
+
+		var defaultAnchors = document.getElementsByClassName("default-anchor");
+		for(var i = 0; i < defaultAnchors.length; i++){
+			defaultAnchors[i].addEventListener('click', function(event) {
+				event.preventDefault();
+			});
+		}
 		//venom.sidenav('mySidenav').open();
 		//venom.sidenav('mySidenav2', {openSpeed: 100}).open();
-		//venom.sidenav('mySidenav').close();
 	</script>
 
 </body>

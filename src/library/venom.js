@@ -33,7 +33,7 @@ var venomSidenav = (function() {
           this.isOpen = false;
           this.element.classList.remove("sidenav-open");
         },
-        openSpeed: 300,
+        openSpeed: 0.5,
         isOpen: false
       };
     }
@@ -48,7 +48,11 @@ var venomSidenav = (function() {
       elementsConfig[elem] = merger(elementsConfig[elem], config);
     }
 
-    console.log(elementsConfig);
+    if (typeof elementsConfig[elem].openSpeed !== 'undefined') {
+      elementsConfig[elem].element.style.animationDuration = elementsConfig[elem].openSpeed + "s";
+    }
+
+    console.log(elementsConfig[elem]);
 
     return elementsConfig[elem];
   }

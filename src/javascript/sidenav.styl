@@ -6,15 +6,17 @@
   background $white
   width 250px
   display none
+  &-open
+    display block
+    animation-duration 0.5s
+    animation-name sidenavLeftAnim
   &-left
     fixed top left
+    animation-name sidenavLeftAnim
   &-right
     fixed top right
     left initial
-  &-open
-    animation-name sidenavLeftAnim
-    animation-duration 0.5s
-    display block
+    animation-name sidenavRightAnim
 
 
 @-webkit-keyframes sidenavLeftAnim
@@ -22,7 +24,6 @@
     opacity 0
     -webkit-transform translate3d(-100%, 0, 0)
     transform translate3d(-100%, 0, 0)
-
   to
     opacity 1
     -webkit-transform none
@@ -33,7 +34,27 @@
     opacity 0
     -webkit-transform translate3d(-100%, 0, 0)
     transform translate3d(-100%, 0, 0)
+  to
+    opacity 1
+    -webkit-transform none
+    transform none
 
+
+@-webkit-keyframes sidenavRightAnim
+  from
+    opacity 0
+    -webkit-transform translate3d(100%, 0, 0)
+    transform translate3d(100%, 0, 0)
+  to
+    opacity 1
+    -webkit-transform none
+    transform none
+
+@keyframes sidenavRightAnim
+  from
+    opacity 0
+    -webkit-transform translate3d(100%, 0, 0)
+    transform translate3d(100%, 0, 0)
   to
     opacity 1
     -webkit-transform none
