@@ -14,11 +14,14 @@
   color $font_color
   background $default
   cursor pointer
-  transition background 0.25s ease-in
+  //transition background 0.25s ease-in
 
   disabled($default)
 
   hover($dark_default)
+  &.linear
+	  background white !important
+	  linear()
 
   &.primary
     background $primary

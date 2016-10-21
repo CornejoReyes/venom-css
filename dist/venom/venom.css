@@ -131,6 +131,7 @@ p {
   border: 1px solid #c4c4c4;
   color: #474747;
   transition: border ease-out 0.2s;
+  resize: none;
 }
 .form .group textarea.field:focus {
   border-color: #a3a3a3;
@@ -154,6 +155,7 @@ p {
   font-size: 1.05em;
   text-align: left;
   margin-bottom: 5px;
+  padding: 0 12px;
 }
 .form.vertical .group .field {
   display: block;
@@ -176,97 +178,118 @@ p {
   border: 1px solid #c4c4c4;
   color: #474747;
   transition: border ease-out 0.2s;
+  resize: none;
 }
 .form.vertical .group textarea.field:focus {
   border-color: #a3a3a3;
   box-shadow: 0px 0px 4px #909090;
 }
 .container {
-  width: 90%;
-  max-width: 1300px;
-  margin: 0 auto;
+  max-width: 1176px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12px;
+  padding-right: 12px;
   height: auto;
 }
 .container.max {
   width: 100%;
 }
+.container .row {
+  margin: 0 -12px;
+  padding: 0 12px;
+}
+.container .row:after {
+  clear: both;
+  content: "";
+  display: block;
+}
 .row {
-  padding: 0 1%;
+  padding: 0 12px;
 }
 .row:after {
   clear: both;
   content: "";
   display: block;
 }
+.row .row {
+  margin: 0 -24px;
+  padding: 0 12px;
+}
+.row .row:after {
+  clear: both;
+  content: "";
+  display: block;
+}
 .mob-12 {
   width: 100%;
-  padding: 0 1%;
+  padding: 0 12px;
   float: left;
   position: relative;
 }
 .mob-11 {
   width: 91.66666666666667%;
-  padding: 0 1%;
+  padding: 0 12px;
   float: left;
   position: relative;
 }
 .mob-10 {
   width: 83.33333333333334%;
-  padding: 0 1%;
+  padding: 0 12px;
   float: left;
   position: relative;
 }
 .mob-9 {
   width: 75%;
-  padding: 0 1%;
+  padding: 0 12px;
   float: left;
   position: relative;
 }
 .mob-8 {
   width: 66.66666666666667%;
-  padding: 0 1%;
+  padding: 0 12px;
   float: left;
   position: relative;
 }
 .mob-7 {
   width: 58.33333333333335%;
-  padding: 0 1%;
+  padding: 0 12px;
   float: left;
   position: relative;
 }
 .mob-6 {
   width: 50%;
-  padding: 0 1%;
+  padding: 0 12px;
   float: left;
   position: relative;
 }
 .mob-5 {
   width: 41.66666666666667%;
-  padding: 0 1%;
+  padding: 0 12px;
   float: left;
   position: relative;
 }
 .mob-4 {
   width: 33.333333333333336%;
-  padding: 0 1%;
+  padding: 0 12px;
   float: left;
   position: relative;
 }
 .mob-3 {
   width: 25%;
-  padding: 0 1%;
+  padding: 0 12px;
   float: left;
   position: relative;
 }
 .mob-2 {
   width: 16.666666666666668%;
-  padding: 0 1%;
+  padding: 0 12px;
   float: left;
   position: relative;
 }
 .mob-1 {
   width: 8.333333333333334%;
-  padding: 0 1%;
+  padding: 0 12px;
   float: left;
   position: relative;
 }
@@ -339,73 +362,73 @@ p {
 @media (min-width: 768px) {
   .sml-12 {
     width: 100%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
   .sml-11 {
     width: 91.66666666666667%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
   .sml-10 {
     width: 83.33333333333334%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
   .sml-9 {
     width: 75%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
   .sml-8 {
     width: 66.66666666666667%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
   .sml-7 {
     width: 58.33333333333335%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
   .sml-6 {
     width: 50%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
   .sml-5 {
     width: 41.66666666666667%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
   .sml-4 {
     width: 33.333333333333336%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
   .sml-3 {
     width: 25%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
   .sml-2 {
     width: 16.666666666666668%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
   .sml-1 {
     width: 8.333333333333334%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
@@ -479,73 +502,73 @@ p {
 @media (min-width: 991px) {
   .med-12 {
     width: 100%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
   .med-11 {
     width: 91.66666666666667%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
   .med-10 {
     width: 83.33333333333334%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
   .med-9 {
     width: 75%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
   .med-8 {
     width: 66.66666666666667%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
   .med-7 {
     width: 58.33333333333335%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
   .med-6 {
     width: 50%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
   .med-5 {
     width: 41.66666666666667%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
   .med-4 {
     width: 33.333333333333336%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
   .med-3 {
     width: 25%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
   .med-2 {
     width: 16.666666666666668%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
   .med-1 {
     width: 8.333333333333334%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
@@ -619,73 +642,73 @@ p {
 @media (min-width: 1170px) {
   .lrg-12 {
     width: 100%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
   .lrg-11 {
     width: 91.66666666666667%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
   .lrg-10 {
     width: 83.33333333333334%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
   .lrg-9 {
     width: 75%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
   .lrg-8 {
     width: 66.66666666666667%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
   .lrg-7 {
     width: 58.33333333333335%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
   .lrg-6 {
     width: 50%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
   .lrg-5 {
     width: 41.66666666666667%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
   .lrg-4 {
     width: 33.333333333333336%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
   .lrg-3 {
     width: 25%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
   .lrg-2 {
     width: 16.666666666666668%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
   .lrg-1 {
     width: 8.333333333333334%;
-    padding: 0 1%;
+    padding: 0 12px;
     float: left;
     position: relative;
   }
@@ -767,7 +790,6 @@ p {
   color: #5c5c5c;
   background: #fff;
   cursor: pointer;
-  transition: background 0.25s ease-in;
 }
 .button.disabled {
   opacity: 0.5;
@@ -779,9 +801,54 @@ p {
 .button:hover {
   background: #f2f2f2;
 }
+.button.linear {
+  background: #fff !important;
+}
+.button.linear.success {
+  color: #56c158;
+}
+.button.linear.success:hover {
+  color: #3ca33e;
+  border-color: #40af43;
+}
+.button.linear.primary {
+  color: #1a7cd6;
+}
+.button.linear.primary:hover {
+  color: #1563ab;
+  border-color: #166ab7;
+}
+.button.linear.info {
+  color: #36c1eb;
+}
+.button.linear.info:hover {
+  color: #15a6d2;
+  border-color: #17b2e0;
+}
+.button.linear.warning {
+  color: #feb046;
+}
+.button.linear.warning:hover {
+  color: #fe9406;
+  border-color: #fe9c17;
+}
+.button.linear.danger {
+  color: #eb544f;
+}
+.button.linear.danger:hover {
+  color: #e2201a;
+  border-color: #e72d26;
+}
+.button.linear.secondary {
+  color: #9c9c9c;
+}
+.button.linear.secondary:hover {
+  color: #8c8c8c;
+  border-color: #858585;
+}
 .button.primary {
   background: #1a7cd6;
-  border-color: #1976cb;
+  border-color: #1770c1;
   color: #fafafa;
 }
 .button.primary.disabled {
@@ -796,7 +863,7 @@ p {
 }
 .button.warning {
   background: #feb046;
-  border-color: #fea936;
+  border-color: #fea226;
   color: #fafafa;
 }
 .button.warning.disabled {
@@ -811,7 +878,7 @@ p {
 }
 .button.danger {
   background: #eb544f;
-  border-color: #e94641;
+  border-color: #e83933;
   color: #fafafa;
 }
 .button.danger.disabled {
@@ -826,7 +893,7 @@ p {
 }
 .button.success {
   background: #56c158;
-  border-color: #4cbd4e;
+  border-color: #43b846;
   color: #fafafa;
 }
 .button.success.disabled {
@@ -841,7 +908,7 @@ p {
 }
 .button.info {
   background: #36c1eb;
-  border-color: #29bdea;
+  border-color: #1cb9e8;
   color: #fafafa;
 }
 .button.info.disabled {
@@ -856,7 +923,7 @@ p {
 }
 .button.secondary {
   background: #9c9c9c;
-  border-color: #949494;
+  border-color: #8c8c8c;
   color: #fafafa;
 }
 .button.secondary.disabled {
@@ -1023,9 +1090,19 @@ table.interactive tbody tr:hover {
   background: #36c1eb;
 }
 span.code {
-  padding: 6px;
-  background-color: #ddd;
-  color: #f02822;
+  padding: 1px 8px;
+  background-color: #f0f0f0;
+  color: #df4f4b;
+  border: 1px solid #ddd;
+  font-size: 80%;
+}
+div.code {
+  padding: 0px 20px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  white-space: pre-wrap;
+  color: #df4f4b;
+  margin-bottom: 12px;
 }
 .bag {
   padding: 6px;

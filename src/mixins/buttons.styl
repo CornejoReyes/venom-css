@@ -10,3 +10,35 @@ disabled(color)
 hover(bg)
   &:hover
     background bg
+
+linear()
+  &.success
+	  color $success
+	  &:hover
+		  color $dark_success
+		  border-color $border_success - 5%
+  &.primary
+	  color $primary
+	  &:hover
+		  color $dark_primary
+		  border-color $border_primary - 5%
+  &.info
+	  color $info
+	  &:hover
+		  color $dark_info
+		  border-color $border_info - 5%
+  &.warning
+	  color $warning
+	  &:hover
+		  color $dark_warning
+		  border-color $border_warning - 5%
+  &.danger
+	  color $danger
+	  &:hover
+		  color $dark_danger
+		  border-color $border_danger - 5%
+  &.secondary
+	  color $secondary
+	  &:hover
+		  color $dark_secondary
+		  border-color $border_secondary - 5%
