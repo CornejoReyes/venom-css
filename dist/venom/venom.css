@@ -131,6 +131,7 @@ p {
   border: 1px solid #c4c4c4;
   color: #474747;
   transition: border ease-out 0.2s;
+  resize: none;
 }
 .form .group textarea.field:focus {
   border-color: #a3a3a3;
@@ -177,6 +178,7 @@ p {
   border: 1px solid #c4c4c4;
   color: #474747;
   transition: border ease-out 0.2s;
+  resize: none;
 }
 .form.vertical .group textarea.field:focus {
   border-color: #a3a3a3;
@@ -193,10 +195,28 @@ p {
 .container.max {
   width: 100%;
 }
+.container .row {
+  margin: 0 -12px;
+  padding: 0 12px;
+}
+.container .row:after {
+  clear: both;
+  content: "";
+  display: block;
+}
 .row {
-  padding: 0 -12px;
+  padding: 0 12px;
 }
 .row:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.row .row {
+  margin: 0 -24px;
+  padding: 0 12px;
+}
+.row .row:after {
   clear: both;
   content: "";
   display: block;

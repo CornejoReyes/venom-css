@@ -203,8 +203,10 @@
 		<div class="row">
 			<div class="med-6 example">
 				<div>.med-6</div>
-				<div class="med-6 example">.med-6</div>
-				<div class="med-6 example">.med-6</div>
+				<div class="row">
+					<div class="med-6 example">.med-6</div>
+					<div class="med-6 example">.med-6</div>
+				</div>
 			</div>
 			<div class="med-6 example">.med-6</div>
 		</div>
@@ -221,7 +223,7 @@
 &lt;/div&gt;
 		</div>
 		<p>Looks like this</p>
-		<div class="row example" style="padding:5px;">
+		<div class="row">
 			<div class="med-left-6 med-6 example">.med-6 with .med-left-6</div>
 		</div>
 		<br>
@@ -233,7 +235,7 @@
 &lt;/div&gt;
 		</div>
 		<p>Looks like this</p>
-		<div class="row example" style="padding:5px;">
+		<div class="row">
 			<div class="med-right-4 med-4 example">.med-4 with .med-right-4</div>
 			<div class="med-4 example">.med-4</div>
 		</div>
@@ -329,6 +331,8 @@
 		<h5 id="vertical-form">Vertical form</h5>
 		<p>By default, Venom makes horizontal forms, but you can make a vertical one. Just add <span class="code">.vertical</span> to the element with <span class="code">.form</span> class.</p>
 		<p><span class="code">.form</span> not requires to be in form tag. So you can simulate a form, but it won't work.</p>
+		<p><span class="code">&lt;input&gt;</span> tag with <span class="code">.field</span> will ocupate the full width of its parent, so you can define a size with columns.
+		In vertical form, <span class="code">&lt;label&gt;</span> no need a column class, but they must have <span class="code">.label</span>.</p>
 		<div class="code">
 &lt;form class="form vertical"&gt;
 	&lt;div class="group"&gt;
