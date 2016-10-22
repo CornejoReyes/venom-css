@@ -1195,12 +1195,22 @@ div.code {
   top: 0;
   left: 0;
   height: 100%;
-  background: #fff;
-  width: 250px;
+  width: 100%;
   display: none;
+}
+.sidenav .sidenav-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #fff;
+  z-index: 2;
 }
 .sidenav-open {
   display: block;
+}
+.sidenav-open .sidenav-content {
   -webkit-animation-duration: 0.5s;
   -moz-animation-duration: 0.5s;
   -o-animation-duration: 0.5s;
@@ -1212,7 +1222,7 @@ div.code {
   -ms-animation-name: sidenavLeftAnim;
   animation-name: sidenavLeftAnim;
 }
-.sidenav-left {
+.sidenav-left .sidenav-content {
   position: fixed;
   top: 0;
   left: 0;
@@ -1223,22 +1233,22 @@ div.code {
   -ms-animation-name: sidenavLeftAnim;
   animation-name: sidenavLeftAnim;
 }
-.sidenav-left.sidenav-success {
+.sidenav-left .sidenav-content.sidenav-success {
   border-right-color: #56c158;
 }
-.sidenav-left.sidenav-primary {
+.sidenav-left .sidenav-content.sidenav-primary {
   border-right-color: #1a7cd6;
 }
-.sidenav-left.sidenav-danger {
+.sidenav-left .sidenav-content.sidenav-danger {
   border-right-color: #eb544f;
 }
-.sidenav-left.sidenav-warning {
+.sidenav-left .sidenav-content.sidenav-warning {
   border-right-color: #feb046;
 }
-.sidenav-left.sidenav-info {
+.sidenav-left .sidenav-content.sidenav-info {
   border-right-color: #36c1eb;
 }
-.sidenav-right {
+.sidenav-right .sidenav-content {
   position: fixed;
   top: 0;
   right: 0;
@@ -1250,20 +1260,29 @@ div.code {
   -ms-animation-name: sidenavRightAnim;
   animation-name: sidenavRightAnim;
 }
-.sidenav-right.sidenav-success {
+.sidenav-right .sidenav-content.sidenav-success {
   border-left-color: #56c158;
 }
-.sidenav-right.sidenav-primary {
+.sidenav-right .sidenav-content.sidenav-primary {
   border-left-color: #1a7cd6;
 }
-.sidenav-right.sidenav-danger {
+.sidenav-right .sidenav-content.sidenav-danger {
   border-left-color: #eb544f;
 }
-.sidenav-right.sidenav-warning {
+.sidenav-right .sidenav-content.sidenav-warning {
   border-left-color: #feb046;
 }
-.sidenav-right.sidenav-info {
+.sidenav-right .sidenav-content.sidenav-info {
   border-left-color: #36c1eb;
+}
+.sidenav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
 }
 .sidenav-item {
   margin: 0px;

@@ -734,21 +734,26 @@
 			</div>
 
 			<div class="med-6">
-				<button class="button primary" onclick="venom.sidenav('mySidenav2').open()">Open Riht Sidenav</button>
+				<button class="button primary" onclick="venom.sidenav('mySidenav2').open()">Open Right Sidenav</button>
 			</div>
 
 			<div id="mySidenav" class="sidenav sidenav-left sidenav-primary">
-				<button class="button primary" onclick="venom.sidenav('mySidenav').close()">Close Sidenav</button>
-				<p class="sidenav-item">Item 1</p>
-				<p class="sidenav-item">Item 2</p>
-				<p class="sidenav-item">Item 3</p>
+				<p class="sidenav-overlay"></p>
+				<div class="sidenav-content">
+					<button class="button primary" onclick="venom.sidenav('mySidenav').close()">Close Sidenav</button>
+					<p class="sidenav-item">Item 1</p>
+					<p class="sidenav-item">Item 2</p>
+					<p class="sidenav-item">Item 3</p>
+				</div>
 			</div>
 
 			<div id="mySidenav2" class="sidenav sidenav-right sidenav-danger">
-				<button class="button primary" onclick="venom.sidenav('mySidenav2').close()">Close Sidenav</button>
-				<p class="sidenav-item">Item 1</p>
-				<p class="sidenav-item">Item 2</p>
-				<p class="sidenav-item">Item 3</p>
+				<div class="sidenav-content">
+					<button class="button primary" onclick="venom.sidenav('mySidenav2').close()">Close Sidenav</button>
+					<p class="sidenav-item">Item 1</p>
+					<p class="sidenav-item">Item 2</p>
+					<p class="sidenav-item">Item 3</p>
+				</div>
 			</div>
 		</div>
 

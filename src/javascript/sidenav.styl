@@ -3,25 +3,37 @@
 .sidenav
   fixed top left
   height 100%
-  background $white
-  width 250px
+  width 100%
   display none
+  .sidenav-content
+    fixed top left
+    width 250px
+    height 100%
+    background $white
+    z-index 2
   &-open
     display block
-    animation-duration 0.5s
-    animation-name sidenavLeftAnim
-  &-left
+    .sidenav-content
+      animation-duration 0.5s
+      animation-name sidenavLeftAnim
+  &-left .sidenav-content
     fixed top left
     border-right 1px solid $gray
     animation-name sidenavLeftAnim
     semantic-one-border-color(right)
-  &-right
+  &-right .sidenav-content
     fixed top right
     left initial
     border-left 1px solid $gray
     animation-name sidenavRightAnim
     semantic-one-border-color(left)
 
+.sidenav-overlay
+  fixed top left
+  width 100%
+  height 100%
+  background rgba(0,0,0,0.5)
+  z-index 1
 
 .sidenav-item
   margin 0px

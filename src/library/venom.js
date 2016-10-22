@@ -17,7 +17,7 @@ var venomSidenav = (function() {
 
   function element(elem, config) {
 
-    if (typeof elem == 'string') {
+    if (typeof elem === 'string') {
       if (elements.indexOf(elem) == -1)
       elements.push(elem);
       elementsConfig[elem] = null;
@@ -49,10 +49,11 @@ var venomSidenav = (function() {
     }
 
     if (typeof elementsConfig[elem].openSpeed !== 'undefined') {
-      elementsConfig[elem].element.style.animationDuration = elementsConfig[elem].openSpeed + "s";
+      var content =   elementsConfig[elem].element.getElementsByClassName('sidenav-content');
+      if (typeof content[0] !== 'undefined') {
+        content[0].style.animationDuration = elementsConfig[elem].openSpeed + "s";
+      }
     }
-
-    console.log(elementsConfig[elem]);
 
     return elementsConfig[elem];
   }
