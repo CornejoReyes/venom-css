@@ -726,6 +726,45 @@
 			</div>
 	</section>
 
+	<section class="container">
+		<div class="row" style="margin-top:10px;">
+			<h4>Sidenav</h4>
+			<div class="med-6">
+				<button class="button primary" onclick="venom.sidenav('mySidenav', {openSpeed: 1.5}).open()">Open Left Sidenav</button>
+			</div>
+
+			<div class="med-6">
+				<button class="button primary" onclick="venom.sidenav('mySidenav2').open()">Open Right Sidenav</button>
+			</div>
+
+			<div id="mySidenav" class="sidenav sidenav-left sidenav-primary">
+				<p class="sidenav-overlay"></p>
+				<div class="sidenav-content">
+					<button class="button primary" onclick="venom.sidenav('mySidenav').close()">Close Sidenav</button>
+					<p class="sidenav-item">Item 1</p>
+					<p class="sidenav-item">Item 2</p>
+					<p class="sidenav-item">Item 3</p>
+				</div>
+			</div>
+
+			<div id="mySidenav2" class="sidenav sidenav-right sidenav-danger">
+				<div class="sidenav-content">
+					<button class="button primary" onclick="venom.sidenav('mySidenav2').close()">Close Sidenav</button>
+					<p class="sidenav-item">Item 1</p>
+					<p class="sidenav-item">Item 2</p>
+					<p class="sidenav-item">Item 3</p>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<script type="text/javascript" src="dist/js/venom.js"></script>
+	<script type="text/javascript">
+		//venom.sidenav('mySidenav').open();
+		//venom.sidenav('mySidenav2', {openSpeed: 100}).open();
+	</script>
+
 </body>
 
 </html>

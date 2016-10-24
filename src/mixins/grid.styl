@@ -13,12 +13,12 @@ width-cell(number-of-columns, padding-of-columns)
       float left
       position relative
 
-left(number-of-columns)
+-left(number-of-columns)
   for cols in (number-of-columns - 1)..1
     &-left-{cols}
         margin-left ((cols/100%)*(100%/number-of-columns)) * 100
 
-right(number-of-columns)
+-right(number-of-columns)
   for cols in (number-of-columns - 1)..1
     &-right-{cols}
         margin-right ((cols/100%)*(100%/number-of-columns)) * 100
@@ -26,23 +26,23 @@ right(number-of-columns)
 grid-sistem-mob(number-of-columns, padding-of-columns)
   .mob
     width-cell(number-of-columns, padding-of-columns)
-    left(number-of-columns)
-    right(number-of-columns)
+    -left(number-of-columns)
+    -right(number-of-columns)
 
 grid-sistem-sml(number-of-columns, padding-of-columns)
   .sml
     width-cell(number-of-columns, padding-of-columns)
-    left(number-of-columns)
-    right(number-of-columns)
+    -left(number-of-columns)
+    -right(number-of-columns)
 
 grid-sistem-med(number-of-columns, padding-of-columns)
   .med
     width-cell(number-of-columns, padding-of-columns)
-    left(number-of-columns)
-    right(number-of-columns)
+    -left(number-of-columns)
+    -right(number-of-columns)
 
 grid-sistem-lrg(number-of-columns, padding-of-columns)
   .lrg
     width-cell(number-of-columns, padding-of-columns)
-    left(number-of-columns)
-    right(number-of-columns)
+    -left(number-of-columns)
+    -right(number-of-columns)
